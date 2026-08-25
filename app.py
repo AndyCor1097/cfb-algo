@@ -251,30 +251,11 @@ def main():
         st.info("No games match your filters. Try lowering the min edge or running predict.py.")
         return
 
-    tab1, tab2 = st.tabs(["🏈 FBS Games", "📋 FCS Games"])
-
-    with tab1:
-        if not games:
-            st.info("No games match your filters.")
-        else:
-            for i, g in enumerate(games):
-                render_game(g, expanded=(i < 3))
-
-    with tab2:
-        fcs_path = os.path.join(BASE_DIR, f"predictions_fcs_week{week}.json")
-        if not os.path.exists(fcs_path):
-            st.warning(f"No FCS predictions for Week {week}. Run: python predict_fcs.py {week}")
-        else:
-            with open(fcs_path) as f:
-                fcs_data = json.load(f)
-            fcs_games = fcs_data.get("games", [])
-            st.info("⚠️ Model trained on FBS data only — FCS predictions are less reliable. Use as a reference.")
-            st.caption(f"{len(fcs_games)} FBS vs FCS games with lines")
-            if not fcs_games:
-                st.write("No FCS games with lines found.")
-            else:
-                for i, g in enumerate(fcs_games):
-                    render_game(g, expanded=(i < 2))
+    if not games:
+        st.info("No games match your filters. Try lowering the min edge or running predict.py.")
+    else:
+        for i, g in enumerate(games):
+            render_game(g, expanded=(i < 3))
 
     st.divider()
     st.caption("⚠️ TheCFBAlgo is for entertainment purposes only. Please gamble responsibly. © 2026 TheAlgoHub")
