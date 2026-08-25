@@ -231,7 +231,7 @@ def main():
     elif sort_by == "ML Edge":
         games.sort(key=lambda x: abs(x.get("ml_home_edge") or 0), reverse=True)
     elif sort_by == "Week":
-        games.sort(key=lambda x: (x.get("week") or 0))
+        games.sort(key=lambda x: (x.get("week") or 0, x.get("game_time") or ""))
 
     # Stats bar
     high = len([g for g in games if abs(g.get("spread_edge") or 0) >= 6])
