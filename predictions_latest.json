@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23 15:54",
+  "generated_at": "2026-09-23 15:59",
   "week": 4,
-  "game_count": 7,
+  "game_count": 5,
   "model_stats": {
     "ats_pct": 84.5,
     "home_mae": 9.27,
@@ -59,32 +59,6 @@
       "ret_off_a": null,
       "portal_net_h": 3.0,
       "portal_net_a": -2.0
-    },
-    {
-      "week": 4,
-      "home_team": "UAB",
-      "away_team": "Navy",
-      "game_time": "2026-09-25T23:00",
-      "pred_home": 30,
-      "pred_away": 44,
-      "pred_margin": -13.9,
-      "pred_total": 74.9,
-      "home_win_prob": 32.2,
-      "away_win_prob": 67.8,
-      "book_spread": 7.0,
-      "model_spread": 13.9,
-      "spread_edge": -6.9,
-      "book_total": 51.5,
-      "total_edge": 23.4,
-      "home_moneyline": 225,
-      "away_moneyline": -278,
-      "ml_home_edge": 1.4,
-      "sp_diff": -16.6,
-      "elo_diff": -110.0,
-      "ret_off_h": null,
-      "ret_off_a": null,
-      "portal_net_h": 5.0,
-      "portal_net_a": -3.0
     },
     {
       "week": 4,
@@ -163,32 +137,6 @@
       "ret_off_a": null,
       "portal_net_h": -13.0,
       "portal_net_a": -18.0
-    },
-    {
-      "week": 4,
-      "home_team": "Temple",
-      "away_team": "Army",
-      "game_time": "2026-09-25T20:00",
-      "pred_home": 32,
-      "pred_away": 33,
-      "pred_margin": -1.0,
-      "pred_total": 65.6,
-      "home_win_prob": 70.9,
-      "away_win_prob": 29.1,
-      "book_spread": 3.0,
-      "model_spread": 1.0,
-      "spread_edge": 2.0,
-      "book_total": 47.5,
-      "total_edge": 18.1,
-      "home_moneyline": 130,
-      "away_moneyline": -155,
-      "ml_home_edge": 27.4,
-      "sp_diff": -7.3,
-      "elo_diff": -207.0,
-      "ret_off_h": null,
-      "ret_off_a": null,
-      "portal_net_h": -3.0,
-      "portal_net_a": -2.0
     }
   ]
 }
