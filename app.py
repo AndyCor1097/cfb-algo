@@ -42,6 +42,15 @@ def check_password():
 
 # ── LOAD DATA ─────────────────────────────────
 @st.cache_data(ttl=300)
+def load_tracker():
+    path = os.path.join(BASE_DIR, "tracker_summary.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)
+    return {}
+
+
+@st.cache_data(ttl=300)
 def load_predictions(week=None):
     # Try week-specific file first, then latest
     if week is not None:
@@ -212,7 +221,7 @@ def main():
         return
 
     games = data.get("games", [])
-    gen   = data.get("generated_at","Unknown")
+    gen   = data.get("generated", data.get("generated_at", "Unknown"))
     stats = data.get("model_stats",{})
 
     # Filter by week if data contains multiple weeks
@@ -234,15 +243,19 @@ def main():
         games.sort(key=lambda x: (x.get("week") or 0, x.get("game_time") or ""))
 
     # Stats bar
-    high = len([g for g in games if abs(g.get("spread_edge") or 0) >= 6])
-    med  = len([g for g in games if 3 <= abs(g.get("spread_edge") or 0) < 6])
+    high    = len([g for g in games if abs(g.get("spread_edge") or 0) >= 6])
+    med     = len([g for g in games if 3 <= abs(g.get("spread_edge") or 0) < 6])
+    tracker = load_tracker()
+    overall = tracker.get("overall", {}).get("spread", {})
+    w, l    = overall.get("W", 0), overall.get("L", 0)
+    ats_str = f"{w}-{l} ({overall.get('pct',0):.1f}%)" if w + l > 0 else "—"
 
     c1, c2, c3, c4, c5 = st.columns(5)
     c1.metric("Games", len(games))
     c2.metric("🔥 Strong Edges", high)
     c3.metric("📊 Med Edges", med)
-    c4.metric("Model ATS", f"{stats.get('ats_pct',0):.1f}%")
-    c5.metric("Updated", gen.split(" ")[1] if " " in gen else gen)
+    c4.metric("Season ATS", ats_str)
+    c5.metric("Updated", gen.split(" ")[0] if " " in gen else gen)
 
     st.divider()
     st.subheader(f"Week {week} — {len(games)} Games")
