@@ -98,7 +98,7 @@ def render_game(g, expanded=False):
     ph   = g.get("pred_home","?")
     pa   = g.get("pred_away","?")
     hwp  = g.get("home_win_prob",50)
-    awp  = g.get("away_win_prob",50)
+    awp  = round(100 - hwp, 1)
     sp   = g.get("book_spread")
     ou   = g.get("book_total")
     hml  = g.get("home_moneyline")
@@ -106,7 +106,7 @@ def render_game(g, expanded=False):
     se   = g.get("spread_edge")
     te   = g.get("total_edge")
     mle  = g.get("ml_home_edge")
-    ms   = g.get("model_spread")
+    ms   = g.get("pred_margin")
     pt   = g.get("pred_total")
     wk   = g.get("week","?")
 
