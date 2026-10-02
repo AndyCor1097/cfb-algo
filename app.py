@@ -177,15 +177,16 @@ def main():
             m1.metric("ATS Record", f"{w_ats}-{l_ats}-{p_ats}")
             m2.metric("Win %",      f"{w_ats / max(w_ats + l_ats, 1):.1%}")
 
-            by_week = tracker.get("by_week", {})
-            if by_week:
+            by_week = tracker.get("by_week", [])
+            if isinstance(by_week, list) and by_week:
                 import pandas as pd
                 rows_rec = []
-                for wk, stats in sorted(by_week.items(), key=lambda x: int(''.join(filter(str.isdigit, str(x[0]))) or 0)):
-                    sp = stats.get("spread", {})
-                    rows_rec.append({"Week": int(wk), "W": sp.get("W",0), "L": sp.get("L",0),
+                for entry in sorted(by_week, key=lambda x: x.get("week", 0)):
+                    sp = entry.get("spread", {}) or {}
+                    rows_rec.append({"Week": entry.get("week"), "W": sp.get("W",0), "L": sp.get("L",0),
                                      "P": sp.get("P",0), "Win%": f"{sp.get('pct',0):.1f}%"})
-                st.dataframe(pd.DataFrame(rows_rec), hide_index=True, use_container_width=True)
+                if rows_rec:
+                    st.dataframe(pd.DataFrame(rows_rec), hide_index=True, use_container_width=True)
 
     st.caption("For entertainment. Not betting advice. © 2026 TheAlgoHub")
 
