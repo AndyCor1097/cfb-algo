@@ -181,7 +181,7 @@ def main():
             if by_week:
                 import pandas as pd
                 rows_rec = []
-                for wk, stats in sorted(by_week.items(), key=lambda x: int(x[0])):
+                for wk, stats in sorted(by_week.items(), key=lambda x: int(''.join(filter(str.isdigit, str(x[0]))) or 0)):
                     sp = stats.get("spread", {})
                     rows_rec.append({"Week": int(wk), "W": sp.get("W",0), "L": sp.get("L",0),
                                      "P": sp.get("P",0), "Win%": f"{sp.get('pct',0):.1f}%"})
