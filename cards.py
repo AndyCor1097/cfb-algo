@@ -31,7 +31,22 @@ def _kick(g):
     else:
         day_short = "TBD"
         day_long = "TBD"
-    return day_short, day_long
+
+    # Parse kickoff time from commence_time (ISO format from Odds API)
+    kickoff = ""
+    ct = g.get("commence_time", "")
+    if ct:
+        try:
+            from datetime import timezone
+            dt_utc = datetime.fromisoformat(ct.replace("Z", "+00:00"))
+            # Convert to ET (UTC-4 in fall)
+            from datetime import timedelta
+            dt_et = dt_utc - timedelta(hours=4)
+            kickoff = dt_et.strftime("%I:%M %p").lstrip("0") + " ET"
+        except Exception:
+            kickoff = ""
+
+    return day_short, day_long, kickoff
 
 
 def _spread_tier(edge):
@@ -112,7 +127,7 @@ def _card(g):
     tot_tier = _total_tier(total_edge)
     best_tier = max((sp_tier, tot_tier), key=lambda x: TIER_RANK.get(x, 0))
 
-    dkey, dlong = _kick(g)
+    dkey, dlong, kickoff = _kick(g)
     win_side = "home" if (pred_margin or 0) > 0 else "away"
 
     # Spread display
@@ -133,7 +148,7 @@ def _card(g):
 
     return f"""
     <article class="card b-{best_tier.lower() or 'none'}" data-day="{dkey}" data-play="{1 if best_tier else 0}" data-rank="{TIER_RANK.get(best_tier,0)}">
-      <header class="meta"><span>{dkey} · Wk{g.get('week','?')}</span><span>{e(home)} vs {e(away)}{venue_note}</span></header>
+      <header class="meta"><span>{dkey} · Wk{g.get('week','?')}{(' · ' + kickoff) if kickoff else ''}</span><span>{e(home)} vs {e(away)}{venue_note}</span></header>
       <div class="teams">
         <div class="team {'fav' if win_side=='away' else ''}">
           <div class="tname"><b>{e(away)}</b><small>ELO {away_elo}</small></div>
@@ -157,7 +172,7 @@ def render_cards(games, week, generated=""):
     day_order = []
     by_day = defaultdict(list)
     for g in games:
-        dk, _ = _kick(g)
+        dk, _, _kt = _kick(g)
         if dk not in by_day:
             day_order.append(dk)
         by_day[dk].append(g)
@@ -165,7 +180,7 @@ def render_cards(games, week, generated=""):
     sections = []
     for dk in day_order:
         gs = by_day[dk]
-        _, dlong = _kick(gs[0])
+        _, dlong, _kt = _kick(gs[0])
         cards_html = "".join(_card(g) for g in gs)
         sections.append(f"""
   <section class="day" data-day="{dk}">
