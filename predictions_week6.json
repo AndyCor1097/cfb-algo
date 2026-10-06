@@ -1,6 +1,6 @@
 {
   "week": 6,
-  "generated": "2026-10-05 12:30",
+  "generated": "2026-10-06 12:24",
   "model": "CSV-based opponent-adjusted metrics (85% ratings / 15% market)",
   "games": [
     {
@@ -29,7 +29,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1395,
-      "away_elo": 1227
+      "away_elo": 1227,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -37,27 +38,28 @@
       "away_team": "Jacksonville State",
       "start_date": "2026-10-07 23:00:00",
       "neutral_site": false,
-      "pred_home": 24,
-      "pred_away": 23,
+      "pred_home": 26,
+      "pred_away": 25,
       "pred_margin": -0.1,
-      "pred_total": 47,
+      "pred_total": 51,
       "ratings_margin": 0.4,
       "home_win_prob": 49.7,
       "home_field_adv": 2.2,
       "book_spread": 3.0,
-      "book_total": null,
+      "book_total": 49.5,
       "home_moneyline": -101,
       "away_moneyline": 99,
       "home_moneyline_book": 124.0,
       "away_moneyline_book": -148.0,
       "spread_edge": 2.9,
-      "total_edge": null,
+      "total_edge": 1.5,
       "ml_edge": 0.051,
       "edge_label": "\ud83d\udcca LEAN",
       "edge_pick": "Kennesaw State",
       "edge_side": "home",
       "home_elo": 1284,
-      "away_elo": 1435
+      "away_elo": 1435,
+      "commence_time": "2026-10-07T23:00:00Z"
     },
     {
       "week": 6,
@@ -65,27 +67,28 @@
       "away_team": "New Mexico State",
       "start_date": "2026-10-07 23:30:00",
       "neutral_site": false,
-      "pred_home": 26,
-      "pred_away": 19,
-      "pred_margin": 7.3,
-      "pred_total": 45,
+      "pred_home": 27,
+      "pred_away": 20,
+      "pred_margin": 7.4,
+      "pred_total": 47,
       "ratings_margin": 7.6,
-      "home_win_prob": 72.7,
+      "home_win_prob": 72.9,
       "home_field_adv": 2.2,
-      "book_spread": -6.0,
-      "book_total": null,
-      "home_moneyline": -266,
-      "away_moneyline": 38,
-      "home_moneyline_book": -218.0,
-      "away_moneyline_book": 180.0,
-      "spread_edge": 1.3,
-      "total_edge": null,
-      "ml_edge": 0.041,
+      "book_spread": -6.5,
+      "book_total": 46.5,
+      "home_moneyline": -269,
+      "away_moneyline": 37,
+      "home_moneyline_book": -238.0,
+      "away_moneyline_book": 195.0,
+      "spread_edge": 0.9,
+      "total_edge": 0.5,
+      "ml_edge": 0.025,
       "edge_label": null,
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1392,
-      "away_elo": 1282
+      "away_elo": 1282,
+      "commence_time": "2026-10-07T23:30:00Z"
     },
     {
       "week": 6,
@@ -113,7 +116,8 @@
       "edge_pick": "Liberty",
       "edge_side": "home",
       "home_elo": 1725,
-      "away_elo": 1142
+      "away_elo": 1142,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -121,27 +125,28 @@
       "away_team": "Missouri State",
       "start_date": "2026-10-08 23:00:00",
       "neutral_site": false,
-      "pred_home": 23,
-      "pred_away": 22,
+      "pred_home": 29,
+      "pred_away": 28,
       "pred_margin": 0.3,
-      "pred_total": 45,
+      "pred_total": 57,
       "ratings_margin": -0.1,
       "home_win_prob": 51.1,
       "home_field_adv": 2.2,
       "book_spread": -2.5,
-      "book_total": null,
+      "book_total": 56.5,
       "home_moneyline": -104,
       "away_moneyline": 96,
       "home_moneyline_book": -135.0,
       "away_moneyline_book": 114.0,
       "spread_edge": -2.2,
-      "total_edge": null,
+      "total_edge": 0.5,
       "ml_edge": -0.063,
       "edge_label": "\ud83d\udcca LEAN",
       "edge_pick": "Missouri State",
       "edge_side": "away",
       "home_elo": 1191,
-      "away_elo": 1292
+      "away_elo": 1292,
+      "commence_time": "2026-10-08T23:00:00Z"
     },
     {
       "week": 6,
@@ -149,27 +154,28 @@
       "away_team": "South Alabama",
       "start_date": "2026-10-08 23:30:00",
       "neutral_site": false,
-      "pred_home": 24,
-      "pred_away": 22,
+      "pred_home": 30,
+      "pred_away": 28,
       "pred_margin": 1.7,
-      "pred_total": 46,
+      "pred_total": 58,
       "ratings_margin": 1.7,
       "home_win_prob": 55.6,
       "home_field_adv": 2.2,
       "book_spread": -1.5,
-      "book_total": null,
+      "book_total": 58.5,
       "home_moneyline": -125,
       "away_moneyline": 80,
       "home_moneyline_book": -115.0,
       "away_moneyline_book": -105.0,
       "spread_edge": 0.2,
-      "total_edge": null,
+      "total_edge": -0.5,
       "ml_edge": 0.021,
       "edge_label": null,
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1321,
-      "away_elo": 1354
+      "away_elo": 1354,
+      "commence_time": "2026-10-08T23:30:00Z"
     },
     {
       "week": 6,
@@ -185,19 +191,20 @@
       "home_win_prob": 61.4,
       "home_field_adv": 2.2,
       "book_spread": -7.0,
-      "book_total": null,
+      "book_total": 49.5,
       "home_moneyline": -159,
       "away_moneyline": 63,
       "home_moneyline_book": -278.0,
       "away_moneyline_book": 225.0,
       "spread_edge": -3.5,
-      "total_edge": null,
+      "total_edge": -0.5,
       "ml_edge": -0.121,
       "edge_label": "\ud83d\udcca LEAN",
       "edge_pick": "South Florida",
       "edge_side": "away",
       "home_elo": 1504,
-      "away_elo": 1623
+      "away_elo": 1623,
+      "commence_time": "2026-10-08T23:30:00Z"
     },
     {
       "week": 6,
@@ -225,7 +232,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1671,
-      "away_elo": 1656
+      "away_elo": 1656,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -253,7 +261,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1398,
-      "away_elo": 1280
+      "away_elo": 1280,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -281,7 +290,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1358,
-      "away_elo": 1480
+      "away_elo": 1480,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -309,7 +319,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1734,
-      "away_elo": 1821
+      "away_elo": 1821,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -337,7 +348,8 @@
       "edge_pick": "Iowa State",
       "edge_side": "away",
       "home_elo": 1699,
-      "away_elo": 1669
+      "away_elo": 1669,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -365,7 +377,8 @@
       "edge_pick": "Army",
       "edge_side": "home",
       "home_elo": 1522,
-      "away_elo": 1517
+      "away_elo": 1517,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -393,7 +406,8 @@
       "edge_pick": "Sacramento State",
       "edge_side": "away",
       "home_elo": 1170,
-      "away_elo": 1185
+      "away_elo": 1185,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -421,7 +435,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1761,
-      "away_elo": 1786
+      "away_elo": 1786,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -449,7 +464,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1751,
-      "away_elo": 2114
+      "away_elo": 2114,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -477,7 +493,8 @@
       "edge_pick": "North Carolina State",
       "edge_side": "home",
       "home_elo": 1517,
-      "away_elo": 1669
+      "away_elo": 1669,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -505,7 +522,8 @@
       "edge_pick": "Central Florida",
       "edge_side": "away",
       "home_elo": 1330,
-      "away_elo": 1488
+      "away_elo": 1488,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -533,7 +551,8 @@
       "edge_pick": "Pittsburgh",
       "edge_side": "home",
       "home_elo": 1668,
-      "away_elo": 1426
+      "away_elo": 1426,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -561,7 +580,8 @@
       "edge_pick": "Arizona",
       "edge_side": "away",
       "home_elo": 1355,
-      "away_elo": 1702
+      "away_elo": 1702,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -589,7 +609,8 @@
       "edge_pick": "Ball State",
       "edge_side": "away",
       "home_elo": 1720,
-      "away_elo": 1065
+      "away_elo": 1065,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -617,7 +638,8 @@
       "edge_pick": "South Carolina",
       "edge_side": "away",
       "home_elo": 1669,
-      "away_elo": 1649
+      "away_elo": 1649,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -645,7 +667,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1320,
-      "away_elo": 1197
+      "away_elo": 1197,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -673,7 +696,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1124,
-      "away_elo": 1253
+      "away_elo": 1253,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -701,7 +725,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 862,
-      "away_elo": 1252
+      "away_elo": 1252,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -729,7 +754,8 @@
       "edge_pick": "California",
       "edge_side": "home",
       "home_elo": 1335,
-      "away_elo": 1501
+      "away_elo": 1501,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -757,7 +783,8 @@
       "edge_pick": "Georgia Tech",
       "edge_side": "home",
       "home_elo": 1493,
-      "away_elo": 1656
+      "away_elo": 1656,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -785,7 +812,8 @@
       "edge_pick": "Kansas State",
       "edge_side": "home",
       "home_elo": 1679,
-      "away_elo": 1550
+      "away_elo": 1550,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -813,7 +841,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1449,
-      "away_elo": 1539
+      "away_elo": 1539,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -841,7 +870,8 @@
       "edge_pick": "Navy",
       "edge_side": "home",
       "home_elo": 1498,
-      "away_elo": 1238
+      "away_elo": 1238,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -869,7 +899,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1629,
-      "away_elo": 1022
+      "away_elo": 1022,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -897,7 +928,8 @@
       "edge_pick": "Stanford",
       "edge_side": "away",
       "home_elo": 2054,
-      "away_elo": 1194
+      "away_elo": 1194,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -925,7 +957,8 @@
       "edge_pick": "Ohio",
       "edge_side": "home",
       "home_elo": 1307,
-      "away_elo": 1248
+      "away_elo": 1248,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -933,27 +966,28 @@
       "away_team": "Texas",
       "start_date": "2026-10-10 19:30:00",
       "neutral_site": true,
-      "pred_home": 24,
-      "pred_away": 29,
-      "pred_margin": -5.9,
+      "pred_home": 23,
+      "pred_away": 30,
+      "pred_margin": -6.2,
       "pred_total": 53,
       "ratings_margin": -5.9,
-      "home_win_prob": 31.2,
+      "home_win_prob": 30.6,
       "home_field_adv": 0.0,
-      "book_spread": 6.0,
+      "book_spread": 7.5,
       "book_total": null,
-      "home_moneyline": -221,
-      "away_moneyline": 45,
-      "home_moneyline_book": 180.0,
-      "away_moneyline_book": -218.0,
-      "spread_edge": 0.1,
+      "home_moneyline": -227,
+      "away_moneyline": 44,
+      "home_moneyline_book": null,
+      "away_moneyline_book": null,
+      "spread_edge": 1.3,
       "total_edge": null,
-      "ml_edge": -0.045,
+      "ml_edge": null,
       "edge_label": null,
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1731,
-      "away_elo": 1930
+      "away_elo": 1930,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -981,7 +1015,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1844,
-      "away_elo": 1660
+      "away_elo": 1660,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1009,7 +1044,8 @@
       "edge_pick": "Buffalo",
       "edge_side": "away",
       "home_elo": 1598,
-      "away_elo": 1294
+      "away_elo": 1294,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1037,7 +1073,8 @@
       "edge_pick": "Vanderbilt",
       "edge_side": "home",
       "home_elo": 1702,
-      "away_elo": 1776
+      "away_elo": 1776,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1065,7 +1102,8 @@
       "edge_pick": "Western Michigan",
       "edge_side": "home",
       "home_elo": 1457,
-      "away_elo": 1050
+      "away_elo": 1050,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1093,7 +1131,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1365,
-      "away_elo": 1460
+      "away_elo": 1460,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1121,7 +1160,8 @@
       "edge_pick": "East Carolina",
       "edge_side": "home",
       "home_elo": 1456,
-      "away_elo": 1184
+      "away_elo": 1184,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1149,7 +1189,8 @@
       "edge_pick": "Arkansas",
       "edge_side": "home",
       "home_elo": 1472,
-      "away_elo": 1786
+      "away_elo": 1786,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1177,7 +1218,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 2064,
-      "away_elo": 1297
+      "away_elo": 1297,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1205,7 +1247,8 @@
       "edge_pick": "San Diego State",
       "edge_side": "away",
       "home_elo": 1418,
-      "away_elo": 1417
+      "away_elo": 1417,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1233,7 +1276,8 @@
       "edge_pick": "Kentucky",
       "edge_side": "home",
       "home_elo": 1559,
-      "away_elo": 1868
+      "away_elo": 1868,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1261,7 +1305,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1627,
-      "away_elo": 1400
+      "away_elo": 1400,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1289,7 +1334,8 @@
       "edge_pick": "Nevada Las Vegas",
       "edge_side": "home",
       "home_elo": 1494,
-      "away_elo": 1636
+      "away_elo": 1636,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1317,7 +1363,8 @@
       "edge_pick": "Nevada",
       "edge_side": "away",
       "home_elo": 984,
-      "away_elo": 1435
+      "away_elo": 1435,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1327,25 +1374,26 @@
       "neutral_site": false,
       "pred_home": 29,
       "pred_away": 27,
-      "pred_margin": 1.5,
+      "pred_margin": 2.1,
       "pred_total": 56,
       "ratings_margin": 2.3,
-      "home_win_prob": 55.0,
+      "home_win_prob": 57.0,
       "home_field_adv": 3.5,
-      "book_spread": 3.0,
+      "book_spread": -1.0,
       "book_total": null,
-      "home_moneyline": -122,
-      "away_moneyline": 82,
-      "home_moneyline_book": 136.0,
-      "away_moneyline_book": -162.0,
-      "spread_edge": 4.5,
+      "home_moneyline": -133,
+      "away_moneyline": 75,
+      "home_moneyline_book": null,
+      "away_moneyline_book": null,
+      "spread_edge": 1.1,
       "total_edge": null,
-      "ml_edge": 0.126,
-      "edge_label": "\u2705 EDGE",
-      "edge_pick": "Alabama",
-      "edge_side": "home",
+      "ml_edge": null,
+      "edge_label": null,
+      "edge_pick": null,
+      "edge_side": null,
       "home_elo": 1991,
-      "away_elo": 2052
+      "away_elo": 2052,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1373,7 +1421,8 @@
       "edge_pick": "James Madison",
       "edge_side": "away",
       "home_elo": 1349,
-      "away_elo": 1821
+      "away_elo": 1821,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1401,7 +1450,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1379,
-      "away_elo": 1442
+      "away_elo": 1442,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1429,7 +1479,8 @@
       "edge_pick": "Northern Illinois",
       "edge_side": "home",
       "home_elo": 1194,
-      "away_elo": 1437
+      "away_elo": 1437,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1439,25 +1490,26 @@
       "neutral_site": false,
       "pred_home": 28,
       "pred_away": 25,
-      "pred_margin": 3.4,
+      "pred_margin": 3.1,
       "pred_total": 53,
       "ratings_margin": 3.8,
-      "home_win_prob": 61.2,
+      "home_win_prob": 60.0,
       "home_field_adv": 3.5,
-      "book_spread": -1.5,
+      "book_spread": 1.0,
       "book_total": null,
-      "home_moneyline": -158,
-      "away_moneyline": 63,
-      "home_moneyline_book": -125.0,
-      "away_moneyline_book": 105.0,
-      "spread_edge": 1.9,
+      "home_moneyline": -150,
+      "away_moneyline": 67,
+      "home_moneyline_book": null,
+      "away_moneyline_book": null,
+      "spread_edge": 4.1,
       "total_edge": null,
-      "ml_edge": 0.056,
-      "edge_label": null,
-      "edge_pick": null,
-      "edge_side": null,
+      "ml_edge": null,
+      "edge_label": "\u2705 EDGE",
+      "edge_pick": "Penn State",
+      "edge_side": "home",
       "home_elo": 1821,
-      "away_elo": 1785
+      "away_elo": 1785,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1485,7 +1537,8 @@
       "edge_pick": "Virginia",
       "edge_side": "home",
       "home_elo": 1595,
-      "away_elo": 1300
+      "away_elo": 1300,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1513,7 +1566,8 @@
       "edge_pick": "Purdue",
       "edge_side": "home",
       "home_elo": 1326,
-      "away_elo": 1526
+      "away_elo": 1526,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1541,7 +1595,8 @@
       "edge_pick": null,
       "edge_side": null,
       "home_elo": 1918,
-      "away_elo": 1625
+      "away_elo": 1625,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1569,7 +1624,8 @@
       "edge_pick": "Hawai'i",
       "edge_side": "away",
       "home_elo": 1429,
-      "away_elo": 1373
+      "away_elo": 1373,
+      "commence_time": ""
     },
     {
       "week": 6,
@@ -1597,7 +1653,8 @@
       "edge_pick": "Fresno State",
       "edge_side": "home",
       "home_elo": 1645,
-      "away_elo": 1681
+      "away_elo": 1681,
+      "commence_time": ""
     }
   ]
 }
