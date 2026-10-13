@@ -24,27 +24,28 @@ def _parse_date(date_str):
 
 
 def _kick(g):
-    d = _parse_date(g.get("start_date", ""))
-    if d:
-        day_short = d.strftime("%a").upper()
-        day_long = f"{d.strftime('%A, %B').upper()} {d.day}"
-    else:
-        day_short = "TBD"
-        day_long = "TBD"
+    from datetime import timezone, timedelta
 
-    # Parse kickoff time from commence_time (ISO format from Odds API)
+    day_short = "TBD"
+    day_long = "TBD"
     kickoff = ""
+
     ct = g.get("commence_time", "")
     if ct:
         try:
-            from datetime import timezone
             dt_utc = datetime.fromisoformat(ct.replace("Z", "+00:00"))
-            # Convert to ET (UTC-4 in fall)
-            from datetime import timedelta
             dt_et = dt_utc - timedelta(hours=4)
+            day_short = dt_et.strftime("%a").upper()
+            day_long = f"{dt_et.strftime('%A, %B').upper()} {dt_et.day}"
             kickoff = dt_et.strftime("%I:%M %p").lstrip("0") + " ET"
         except Exception:
-            kickoff = ""
+            pass
+    else:
+        # fallback: try start_date field
+        d = _parse_date(g.get("start_date", ""))
+        if d:
+            day_short = d.strftime("%a").upper()
+            day_long = f"{d.strftime('%A, %B').upper()} {d.day}"
 
     return day_short, day_long, kickoff
 
